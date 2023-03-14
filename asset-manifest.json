@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Learn2Code/static/css/main.1474017d.css",
+    "main.js": "/Learn2Code/static/js/main.0c9b5507.js",
+    "index.html": "/Learn2Code/index.html",
+    "main.1474017d.css.map": "/Learn2Code/static/css/main.1474017d.css.map",
+    "main.0c9b5507.js.map": "/Learn2Code/static/js/main.0c9b5507.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1474017d.css",
+    "static/js/main.0c9b5507.js"
+  ]
+}
