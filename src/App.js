@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './sections/Home/home.js';
+import Documentation from './sections/Documentation/documentation.js';
+import Sandbox from './sections/Sandbox/sandbox.js';
+import Quiz from './sections/Quiz/quiz.js';
+import Navbar from './assets/Navbar/navbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/sandbox" element={<Sandbox />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/documentation" element={<Documentation />}/>
+        </Routes>
+      </div>
+    </Router>
+    </>
   );
 }
-
-export default App;
